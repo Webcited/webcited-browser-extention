@@ -1,5 +1,6 @@
 {
-  "name": "Chrome Extension Webpack",
+  "name": "Webcited",
+  "permissions": ["activeTab"],
   "options_page": "options.html",
   "background": {
     "page": "background.html"

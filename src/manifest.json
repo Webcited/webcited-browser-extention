@@ -1,6 +1,6 @@
 {
   "name": "Webcited",
-  "permissions": ["activeTab"],
+  "permissions": ["https://*.webcited.co/"],
   "options_page": "options.html",
   "background": {
     "page": "background.html"

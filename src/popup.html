@@ -11,10 +11,15 @@
     <h1 class="heading-6">Export Webflow Code</h1>
     <p class="paragraph-7 custom">Export Production Ready Code Of Your Webflow Website</p>
     <div class="form-block w-form">
-      <form id="url-form" name="email-form" data-name="Email Form" class="form" method="POST" action="https://webcited.co">
-        <input type="url" class="text-field w-input" autofocus="true" maxlength="256" name="Enter-URL"
-          data-name="Enter URL" placeholder="Enter Webflow URL" id="Enter-URL" required="" />
-        <input type="submit" value="Export Code" data-wait="Please Wait..." class="submit-button w-button" id="exportbutton" />
+      <form id="url-form" name="email-form" data-name="Email Form" class="form" method="POST"
+        action="https://webcited.herokuapp.com/ext" target="_self">
+        <input type="hidden" name="name" id="name" value="EXTENSION" />
+        <input type="hidden" name="EMAIL" id="EMAIL" value="squad@webcited.co" />
+        <input type="hidden" name="Status" id="Status" value="JPA" />
+        <input type="url" class="text-field w-input" autofocus="true" maxlength="256" name="SiteUrlToExport"
+          data-name="Enter URL" placeholder="Enter Webflow URL" id="SiteUrlToExport" required="" />
+        <input type="submit" value="Export Code" data-wait="Please Wait..." class="submit-button w-button"
+          id="exportbutton" />
       </form>
       <div class="w-form-done">
         <div>Thank you! Your submission has been received!</div>
@@ -23,7 +28,7 @@
         <div>Oops! Something went wrong while submitting the form.</div>
       </div>
     </div>
-    <p class="paragraph-7 somecutsom">Progess: <span class="progesss">Exporting...</span></p>
+    <p class="paragraph-7 somecutsom">Progess: <span class="progesss" id="progress">Idle</span></p>
     <p class="paragraph-7 cutomshit">Pay Our Rent: <span class="codehighlight">Buy A Coffee, So We can work at
         night</span></p>
     <div class="contentcontainer w-container">

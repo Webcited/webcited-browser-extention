@@ -1817,12 +1817,6 @@ textarea.w-select {
   margin-bottom: 8px;
 }
 
-.mainbody {
-  background-image: url("https://uploads-ssl.webflow.com/5fb0d1ad56d9a38970be0176/5fcf7fb7207c8577c4653b42_5f4be1856f6367407ffd84af_06.%20Wisteria.jpg");
-  background-position: 0px 0px;
-  background-size: cover;
-}
-
 .formwrapper {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1869,32 +1863,6 @@ textarea.w-select {
   letter-spacing: 1px;
   background-clip: border-box;
   cursor: pointer;
-}
-
-.submiturl:hover {
-  background-color: #fff;
-  background-image: url("https://uploads-ssl.webflow.com/5fb0d1ad56d9a38970be0176/5fb0d1d0177e607677ffec26_LazyLoadGif.gif");
-  background-position: 50% 50%;
-  background-size: 250px;
-  background-repeat: repeat;
-  color: #010101;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.submiturl:active {
-  border-style: solid;
-  border-width: 1px;
-  background-color: #fff;
-  background-image: url("https://uploads-ssl.webflow.com/5fb0d1ad56d9a38970be0176/5fb0d1d0177e607677ffec26_LazyLoadGif.gif");
-  background-position: 50% 50%;
-  background-size: cover;
-  color: #fff;
-  font-size: 16px;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .herosectionv1 {
@@ -2001,44 +1969,6 @@ textarea.w-select {
   transform: scale(1.09);
 }
 
-.siteurl::-webkit-input-placeholder {
-  background-image: url("https://uploads-ssl.webflow.com/5fb0d1ad56d9a38970be0176/5fb0d1d0177e6021ebffec19_Gradeint.jpg");
-  background-position: 50% 50%;
-  background-size: auto;
-  font-weight: 500;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.siteurl:-ms-input-placeholder {
-  background-image: url("https://uploads-ssl.webflow.com/5fb0d1ad56d9a38970be0176/5fb0d1d0177e6021ebffec19_Gradeint.jpg");
-  background-position: 50% 50%;
-  background-size: auto;
-  font-weight: 500;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.siteurl::-ms-input-placeholder {
-  background-image: url("https://uploads-ssl.webflow.com/5fb0d1ad56d9a38970be0176/5fb0d1d0177e6021ebffec19_Gradeint.jpg");
-  background-position: 50% 50%;
-  background-size: auto;
-  font-weight: 500;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.siteurl::placeholder {
-  background-image: url("https://uploads-ssl.webflow.com/5fb0d1ad56d9a38970be0176/5fb0d1d0177e6021ebffec19_Gradeint.jpg");
-  background-position: 50% 50%;
-  background-size: auto;
-  font-weight: 500;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .siteurl.urlinput {
   width: 90%;
   cursor: pointer;
@@ -2077,7 +2007,6 @@ textarea.w-select {
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
-  background-image: url("https://uploads-ssl.webflow.com/5fb0d1ad56d9a38970be0176/5fb0d1d0177e6083e0ffec24_ColorEffectTextBg.gif");
   background-position: 50% 50%;
   background-size: cover;
   font-family: Redcollar, sans-serif;
@@ -2097,44 +2026,6 @@ textarea.w-select {
   text-align: center;
   text-decoration: none;
   text-transform: capitalize;
-}
-
-.supportbutton {
-  position: fixed;
-  left: auto;
-  right: 0%;
-  bottom: 0%;
-  z-index: 99;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 120px;
-  margin-top: 5px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  padding-top: 9px;
-  padding-bottom: 9px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 10px;
-  background-image: url("https://uploads-ssl.webflow.com/5fb0d1ad56d9a38970be0176/5fb0d1d0177e60b29dffec20_Gradeint%20Fluid.jpg");
-  background-position: 0% 0%;
-  background-size: 500px;
-  box-shadow: 0 1px 3px 0 #bfbfbf;
-  font-family: Spacegrotesk, sans-serif;
-  color: #000;
-  font-weight: 600;
-  letter-spacing: 1px;
-  text-decoration: underline;
-  white-space: nowrap;
-  cursor: help;
 }
 
 .publish {
@@ -2987,6 +2878,41 @@ textarea.w-select {
   display: block;
   border: 1.5px solid #000;
   border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.welcome-screen.quotescreen {
+  margin: 253px auto;
+  width: 450px;
+  height: 300px;
+  border-style: solid;
+  border-width: 1.5px;
+  border-color: #e89446;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  opacity: 0;
+  animation: fadeInFromNone reverse 1s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+@keyframes fadeInFromNone {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  1% {
+    display: block;
+    opacity: 0;
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
+  }
 }
 
 .body-2 {
@@ -3594,66 +3520,54 @@ textarea.w-select {
 }
 @font-face {
   font-family: "Spacegrotesk";
-  src: url("https://uploads-ssl.webflow.com/5fb0d1ad56d9a38970be0176/5fb0d28d530de6e7f894dbda_SpaceGrotesk-Light.woff2")
-      format("woff2"),
-    url("https://uploads-ssl.webflow.com/5fb0d1ad56d9a38970be0176/5fb0d28d0470391c3afe1ec7_SpaceGrotesk-Light.woff")
-      format("woff");
+  src: url("fonts/SpaceGrotesk-Light.woff2") format("woff2"),
+    url("fonts/SpaceGrotesk-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Spacegrotesk";
-  src: url("https://uploads-ssl.webflow.com/5fb0d1ad56d9a38970be0176/5fb0d28d176306f2e1e8d948_SpaceGrotesk-Medium.woff2")
-      format("woff2"),
-    url("https://uploads-ssl.webflow.com/5fb0d1ad56d9a38970be0176/5fb0d28d8e1c0ce3cf897178_SpaceGrotesk-Medium.woff")
-      format("woff");
+  src: url("fonts/SpaceGrotesk-Medium.woff2") format("woff2"),
+    url("fonts/SpaceGrotesk-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Spacegrotesk";
-  src: url("https://uploads-ssl.webflow.com/5fb0d1ad56d9a38970be0176/5fb0d28d8474c450a94d1bc4_SpaceGrotesk-Regular.woff2")
-      format("woff2"),
-    url("https://uploads-ssl.webflow.com/5fb0d1ad56d9a38970be0176/5fb0d28dbd22a0dd1433e497_SpaceGrotesk-Regular.woff")
-      format("woff");
+  src: url("fonts/SpaceGrotesk-Regular.woff2") format("woff2"),
+    url("fonts/SpaceGrotesk-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Spacegrotesk";
-  src: url("https://uploads-ssl.webflow.com/5fb0d1ad56d9a38970be0176/5fb0d28d3848e3f4eaa232f9_SpaceGrotesk-SemiBold.woff2")
-      format("woff2"),
-    url("https://uploads-ssl.webflow.com/5fb0d1ad56d9a38970be0176/5fb0d28d9cf83c693ff483d5_SpaceGrotesk-SemiBold.woff")
-      format("woff");
+  src: url("fonts/SpaceGrotesk-SemiBold.woff2") format("woff2"),
+    url("fonts/SpaceGrotesk-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Spacegrotesk";
-  src: url("https://uploads-ssl.webflow.com/5fb0d1ad56d9a38970be0176/5fb0d28d0cbef1a32718b3bd_SpaceGrotesk-Bold.woff2")
-      format("woff2"),
-    url("https://uploads-ssl.webflow.com/5fb0d1ad56d9a38970be0176/5fb0d28e1763060298e8d949_SpaceGrotesk-Bold.woff")
-      format("woff");
+  src: url("fonts/SpaceGrotesk-Bold.woff2") format("woff2"),
+    url("fonts/SpaceGrotesk-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Redcollar";
-  src: url("https://uploads-ssl.webflow.com/5fb0d1ad56d9a38970be0176/5fb0d2b9bd22a046c633e4b5_Redcollar.woff2")
-    format("woff2");
+  src: url("fonts/Redcollar.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Customfont";
-  src: url("https://uploads-ssl.webflow.com/5fb0d1ad56d9a38970be0176/5fcf88f0740321a3269e823c_CustomFont.woff2")
-    format("woff2");
+  src: url("fonts/CustomFont.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
